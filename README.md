@@ -5,19 +5,21 @@ It is designed as a lightweight foundation that can later evolve into more advan
 
 ---
 
-> Current version: **v0.2 – Streaming Chat**
+> Current version: **v0.3 – Persistent Chat**
 
 ---
 
 ## ✨ Features
 
-- Simple conversational chatbot using LangGraph
+- Conversational chatbot built using LangGraph
 - Local LLM support via Ollama
 - Clean separation between backend logic and frontend UI
 - Streamlit-based chat interface
-- Thread-aware memory using LangGraph checkpointers
-- Beginner-friendly and easy to extend
+- Persistent chat memory using SQLite (conversations survive restarts)
+- Resume previous conversations by thread
+- Conversation naming and chat history sidebar
 - Real-time streaming responses for a more natural chat experience
+- Beginner-friendly and easy to extend
 
 ---
 
@@ -81,7 +83,7 @@ Your chatbot will be available in the browser 🚀
 1. User enters a message via the Streamlit UI  
 2. Message is sent to a LangGraph state graph  
 3. The chatbot node invokes the local LLM  
-4. Responses are stored using a thread-based checkpointer  
+4. Conversations and metadata are persisted using SQLite-backed LangGraph checkpointers
 5. The reply is rendered back in the UI  
 
 This architecture is intentionally minimal and designed to scale.
@@ -93,18 +95,17 @@ This architecture is intentionally minimal and designed to scale.
 - Add intent detection (Sentinel-style routing)
 - Conditional graph flows
 - Tool and function calling
-- Persistent memory (DB / vector store)
 - Multi-agent workflows
 
 ---
 
 ## 📌 Version
 
-**v0.1 – Chatbot Lite**  
-Single-node conversational agent built as a foundation project.
-
 **v0.2 – Streaming Chat**  
-Includes real-time streaming responses for a more natural chat experience.
+Introduced real-time streaming responses for a more natural chat experience.
+
+**v0.3 – Persistent Chat**  
+Added SQLite-backed persistent memory, conversation management, and resume chat functionality.
 
 ---
 
