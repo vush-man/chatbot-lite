@@ -17,7 +17,7 @@ It is designed as a lightweight foundation that can later evolve into more advan
 - Streamlit-based chat interface
 - Persistent chat memory using SQLite (conversations survive restarts)
 - Resume previous conversations by thread
-- Conversation naming and chat history sidebar
+- Chat history sidebar
 - Real-time streaming responses for a more natural chat experience
 - Beginner-friendly and easy to extend
 
