@@ -5,9 +5,6 @@ from langchain_ollama import ChatOllama
 from langgraph.checkpoint.sqlite import SqliteSaver
 from langgraph.graph.message import add_messages
 import sqlite3
-from dotenv import load_dotenv
-
-load_dotenv()
 
 llm = ChatOllama(
     model= 'llama3.2:3b'
