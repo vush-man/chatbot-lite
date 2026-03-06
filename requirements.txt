@@ -1,5 +1,15 @@
 langgraph
 langchain
-langchain_ollama
-streamlit
+langchain-core
+langchain-community
+langchain-text-splitters
+langchain-ollama
+langchain-mcp-adapters
 langgraph-checkpoint-sqlite
+streamlit
+aiosqlite
+fastmcp
+python-dotenv
+requests
+faiss-cpu
+duckduckgo-search
