@@ -12,4 +12,4 @@ fastmcp
 python-dotenv
 requests
 faiss-cpu
-duckduckgo-search
+ddgs
